@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>K AND K Multiservice</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <link rel="stylesheet" href="./assets/css/styles.min.css">
+</head>
+
+<body>
+
+  <header class="logo">
+    <img src="./assets/img/logo.png" alt="logo">
+  </header>
+
+  <a href="#" class="menu__trigger" id="menuTrigger">
+    <i class="fas fa-bars"></i> MENU
+  </a>
+  <div class="menu__container">
+    <nav class="menu" id="menu">
+      <ul class="menu__ul">
+        <a href="./index.html" class="menu__link">
+          <li>INICIO</li>
+        </a>
+        <a href="./nosotros.html" class="menu__link">
+          <li>NOSOTROS</li>
+        </a>
+        <a href="./servicios.html" class="menu__link">
+          <li>SERVICIOS</li>
+        </a>
+        <a href="#" class="menu__link menu__link--selected">
+          <li>CLIENTES</li>
+        </a>
+        <a href="./noticias.html" class="menu__link">
+          <li>NOTICIAS</li>
+        </a>
+        <a href="./contactanos.html" class="menu__link">
+          <li>CONTÁCTANOS</li>
+        </a>
+      </ul>
+    </nav>
+  </div>
+
+
+  <section class="wrapper">
+    <div class="customers">
+      <h3 class="customers__title">TRABAJANDO DE LA MANO CON NUESTROS CLIENTES</h3>
+      <div class="customers__container swiper-container">
+
+        <div class="swiper-wrapper">          
+          <div class="swiper-slide customers__slide">
+            <div class="customers__itemSlide"><img src="./assets/img/brands/img1.png" alt=""></div>
+            <div class="customers__itemSlide"><img src="./assets/img/brands/img12.png" alt=""></div>
+            <div class="customers__itemSlide"><img src="./assets/img/brands/img3.png" alt=""></div>
+            <div class="customers__itemSlide"><img src="./assets/img/brands/img4.png" alt=""></div>
+          </div>
+          <div class="swiper-slide customers__slide">
+            <div class="customers__itemSlide"><img src="./assets/img/brands/img5.png" alt=""></div>
+            <div class="customers__itemSlide"><img src="./assets/img/brands/img6.png" alt=""></div>
+            <div class="customers__itemSlide"><img src="./assets/img/brands/img7.png" alt=""></div>
+            <div class="customers__itemSlide"><img src="./assets/img/brands/img8.png" alt=""></div>
+          </div>
+          <div class="swiper-slide customers__slide">
+            <div class="customers__itemSlide"><img src="./assets/img/brands/img9.png" alt=""></div>
+            <div class="customers__itemSlide"><img src="./assets/img/brands/img10.png" alt=""></div>
+            <div class="customers__itemSlide"><img src="./assets/img/brands/img11.png" alt=""></div>
+            <div class="customers__itemSlide"><img src="./assets/img/brands/img2.png" alt=""></div>
+          </div>
+          <div class="swiper-slide customers__slide">
+            <div class="customers__itemSlide"><img src="./assets/img/brands/img13.png" alt=""></div>
+            <div class="customers__itemSlide"><img src="./assets/img/brands/img14.png" alt=""></div>
+            <div class="customers__itemSlide"><img src="./assets/img/brands/img15.png" alt=""></div>
+            <div class="customers__itemSlide"><img src="./assets/img/brands/img16.png" alt=""></div>
+          </div>
+          <div class="swiper-slide customers__slide">
+            <div class="customers__itemSlide"><img src="./assets/img/brands/img17.png" alt=""></div>
+            <div class="customers__itemSlide"><img src="./assets/img/brands/img18.png" alt=""></div>
+            <div class="customers__itemSlide"><img src="./assets/img/brands/img19.png" alt=""></div>
+            <div class="customers__itemSlide"><img src="./assets/img/brands/img20.png" alt=""></div>
+          </div>
+                    
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="wrapper footer__container">
+      <div class="footer__item">
+        <h4 class="footer__title">ACERCA DE NOSOTROS</h4>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, odio voluptatibus, consequuntur
+          exercitationem
+          rerum, accusamus ipsa quo excepturi in labore adipisci. Aperiam est, necessitatibus aliquid quaerat mollitia
+          nobis
+          quos eum.</P>
+      </div>
+      <div class="footer__item">
+        <i class="far fa-copyright"></i>&nbsp; 2000-2020 KANDKMULTISERVICE
+      </div>
+      <div class="footer__item footer__redes">
+        <h4 class="footer__title">CONTÁCTANOS</h4>
+        <a href="#" class="red__link">
+          <i class="fab fa-facebook-square"></i>
+          <span class="red__span">KANDKMULTISERVICE</span>
+        </a>
+        <a href="tel:(212) 324-4152" class="red__link">
+          <i class="fas fa-phone-square"></i>
+          <span class="red__span">(212) 324-4152</span>
+        </a>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script>
+    (() => {
+      let menuTrigger = document.getElementById('menuTrigger')
+
+      menuTrigger.addEventListener('click', e => {
+        e.preventDefault();
+        let menu = document.getElementById('menu')
+        menu.classList.toggle('menu--open')
+
+      })
+
+    })();
+
+    (() => {
+      var mySwiper = new Swiper('.swiper-container', {        
+        loop: true,
+        slidesPerView: 1,
+        breakpoints: {
+          320: {
+            slidesPerView: 1          
+          },          
+          720: {
+            slidesPerView: 2          
+          },
+          1024: {
+            slidesPerView: 3
+          }
+        },        
+        pagination: {
+          el: '.swiper-pagination',
+        },      
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },       
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+      })
+    })();
+
+  </script>
+
+</body>
+
+</html>

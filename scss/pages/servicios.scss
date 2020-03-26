@@ -1,0 +1,26 @@
+.services{
+  padding: 0px 20px;
+  margin-bottom: 20px;
+  &__title{
+    text-align: center;
+    letter-spacing: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  &__paragraph{
+    text-align: justify;
+
+  }
+}
+
+@media(min-width:768px){
+  .services{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    &__item{
+      width: 30%;
+    }
+  }
+  
+}

@@ -1,0 +1,18 @@
+.news{
+  &__container{
+    padding: 0px 20px;
+  }
+}
+
+.new{
+  &__itemHeader{
+    margin-top: 10px;
+    width: 100%;
+    display: inline-block;
+    & img{
+      width: 100%;
+      height: auto;
+    }
+    
+  }
+}

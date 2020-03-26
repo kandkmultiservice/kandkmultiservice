@@ -1,0 +1,16 @@
+.logo{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  height: 100px;
+  transition: height .2s;
+  img{
+    height: 100%;
+    width: auto;
+  }
+}  
+@media (min-width: 768px){
+  .logo{
+    height: 140px;
+  }
+}

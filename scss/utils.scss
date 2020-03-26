@@ -1,0 +1,21 @@
+.flex{
+  display: flex;
+}
+
+.wrapper{
+  width: 100%;
+}
+
+@media(min-width:1024px){
+  .wrapper{
+    width: 900px;
+    margin: 0 auto;
+  }
+}
+
+@media(min-width:1280px){
+  .wrapper{
+    width: 1024px;
+    margin: 0 auto;
+  }
+}
